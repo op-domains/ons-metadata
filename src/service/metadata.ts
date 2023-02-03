@@ -69,7 +69,7 @@ export class Metadata {
         );
     this.description =
       description ||
-      `${this.name}, an ENS name.${
+      `${this.name}, an ONS name.${
         !this.is_normalized ? ` (${name} is not in normalized form)` : ''
       }`;
     if (!is_valid || !isASCII(label)) {
@@ -101,7 +101,7 @@ https://en.wikipedia.org/wiki/IDN_homograph_attack';
       value: this.segment_length,
     });
     this.url = this.is_normalized
-      ? `https://app.ens.domains/name/${name}`
+      ? `https://app.opnames.org/name/${name}`
       : null;
     this.version = version;
     this.addAttribute({

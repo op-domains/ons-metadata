@@ -1,8 +1,8 @@
 import { Express } from 'express';
 
-import { ensMetadata } from './controller/ensMetadata';
-import { ensImage } from './controller/ensImage';
-import { ensRasterize } from './controller/ensRasterize';
+import { onsMetadata } from './controller/onsMetadata';
+import { onsImage } from './controller/onsImage';
+import { onsRasterize } from './controller/onsRasterize';
 import { avatarMetadata } from './controller/avatarMetadata';
 import { avatarImage } from './controller/avatarImage';
 import { queryNFTep } from './controller/queryNFT';
@@ -16,17 +16,17 @@ export default function (app: Express) {
 
   app.get(
     '/:networkName/:contractAddress(0x[a-fA-F0-9]{40})/:tokenId',
-    ensMetadata
+    onsMetadata
   );
 
   app.get(
     '/:networkName/:contractAddress(0x[a-fA-F0-9]{40})/:tokenId/image',
-    ensImage
+    onsImage
   );
 
   app.get(
     '/:networkName/:contractAddress(0x[a-fA-F0-9]{40})/:tokenId/rasterize',
-    ensRasterize
+    onsRasterize
   );
 
   app.get('/:networkName/avatar/:name/meta', avatarMetadata);

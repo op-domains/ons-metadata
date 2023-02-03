@@ -12,9 +12,9 @@ const endpointsFiles = ['./src/endpoint.ts'];
 const doc = {
   info: {
     version: '0.0.1-alpha.1',
-    title: 'ENS Metadata Service',
-    description: 'Set of endpoints to query ENS metadata and more',
-    contact: 'contact@ens.domains',
+    title: 'ONS Metadata Service',
+    description: 'Set of endpoints to query ONS metadata and more',
+    contact: 'contact@opnames.org',
     license: 'MIT License',
     x_logo: {
       url: './src/assets/logo.svg',
@@ -24,7 +24,7 @@ const doc = {
   host: SERVER_URL,
   definitions: {
     AvatarMetadata: {
-      $uri: 'ENS name of avatar holder',
+      $uri: 'ONS name of avatar holder',
       is_owner: 'Ownership verification of NFT',
       host_meta: {
         chain_id: 'Chain ID where NFT resides',
@@ -44,18 +44,18 @@ const doc = {
         background_color: 'Background color of NFT',
         youtube_url: 'Youtube URL of NFT'
     },
-    ENSMetadata: {
-      $name: 'ENS name',
-      $description: 'Short ENS name description',
-      $attributes: 'Custom traits about ENS',
-      $name_length: 'Character length of ens name',
-      $url: 'ENS App URL of the name',
-      $version: 'ENS NFT version',
+    ONSMetadata: {
+      $name: 'ONS name',
+      $description: 'Short ONS name description',
+      $attributes: 'Custom traits about ONS',
+      $name_length: 'Character length of ons name',
+      $url: 'ONS App URL of the name',
+      $version: 'ONS NFT version',
       $background_image: 'Origin URL of avatar image',
-      $image_url: 'URL of ENS NFT image',
+      $image_url: 'URL of ONS NFT image',
     },
     contractAddress: '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85',
-    ensName: 'nick.eth',
+    onsName: 'nick.eth',
     tokenId: '4221908525551133525058944220830153...',
     networkName: {
       description: 'Name of the chain to query for.',
@@ -95,9 +95,9 @@ const doc = {
         image:
           'https://ipfs.io/ipfs/QmRagxjj2No4T8gNCjpM42mLZGQE3ZwMYdTFUYe6e6LMBG',
       },
-      ENSMetadata: {
+      ONSMetadata: {
         $name: 'nick.eth',
-        $description: 'nick.eth, an ENS name.',
+        $description: 'nick.eth, an ONS name.',
         $attributes: [
           {
             trait_type: 'Created Date',
@@ -121,12 +121,12 @@ const doc = {
           },
         ],
         name_length: 4,
-        url: 'https://app.ens.domains/name/nick.eth',
+        url: 'https://app.ons.domains/name/nick.eth',
         version: 0,
         background_image:
-          'https://metadata.ens.domains/mainnet/avatar/nick.eth',
+          'https://metadata.opnames.org/mainnet/avatar/nick.eth',
         image_url:
-          'https://metadata.ens.domains/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image',
+          'https://metadata.opnames.org/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image',
       },
     },
   },

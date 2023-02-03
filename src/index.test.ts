@@ -422,7 +422,7 @@ test('raise ContractMismatchError', async (t: ExecutionContext<TestContext>) => 
   const { message } = JSON.parse(body as string);
   t.assert(
     message ===
-      `${NON_CONTRACT_ADDRESS} does not match with any ENS related contract`
+      `${NON_CONTRACT_ADDRESS} does not match with any ONS related contract`
   );
 });
 

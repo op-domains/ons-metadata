@@ -92,10 +92,10 @@ export async function getDomain(
       metadata.generateImage();
     } else {
       metadata.setBackground(
-        `https://metadata.ens.domains/${networkName}/avatar/${name}`
+        `https://metadata.opnames.org/${networkName}/avatar/${name}`
       );
       metadata.setImage(
-        `https://metadata.ens.domains/${networkName}/${contractAddress}/${hexId}/image`
+        `https://metadata.opnames.org/${networkName}/${contractAddress}/${hexId}/image`
       );
     }
   }

@@ -54,7 +54,7 @@ export async function checkContract(
   }
 
   throw new ContractMismatchError(
-    `${_contractAddress} does not match with any ENS related contract`,
+    `${_contractAddress} does not match with any ONS related contract`,
     400
   );
 }

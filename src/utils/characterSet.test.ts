@@ -8,74 +8,74 @@ const test = avaTest as TestFn<TestContext>;
 const getLabel = (name: string) => name.substring(0, name.indexOf('.'));
 
 test('should retrieve letter character set for nick.eth', (t: ExecutionContext<TestContext>) => {
-  const ENS = 'nick.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = 'nick.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.LETTER);
 });
 
 test('should retrieve digit character set for 9898.eth', (t: ExecutionContext<TestContext>) => {
-  const ENS = '9898.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = '9898.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.DIGIT);
 });
 
 test('should retrieve alphanumeric character set for 0xmatoken.eth', (t: ExecutionContext<TestContext>) => {
-  const ENS = '0xmatoken.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = '0xmatoken.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.ALPHANUMERIC);
 });
 
 test('should retrieve emoji character set for 👨🏻‍🚀👨🏻‍🚀👨🏻‍🚀.eth', (t: ExecutionContext<TestContext>) => {
-  const ENS = '👨🏻‍🚀👨🏻‍🚀👨🏻‍🚀.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = '👨🏻‍🚀👨🏻‍🚀👨🏻‍🚀.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.EMOJI);
 });
 
 test('should retrieve alphanumeric character set for Japanese', (t: ExecutionContext<TestContext>) => {
-  const ENS = '太陽.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = '太陽.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.ALPHANUMERIC);
 });
 
 test('should retrieve alphanumeric character set for Turkish', (t: ExecutionContext<TestContext>) => {
-  const ENS = 'güneş.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = 'güneş.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.ALPHANUMERIC);
 });
 
 test('should retrieve alphanumeric character set for Russian', (t: ExecutionContext<TestContext>) => {
-  const ENS = 'солнце.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = 'солнце.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.ALPHANUMERIC);
 });
 
 test('should retrieve alphanumeric character set for Hebrew', (t: ExecutionContext<TestContext>) => {
-  const ENS = 'שמש.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = 'שמש.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.ALPHANUMERIC);
 });
 
 test('should retrieve alphanumeric character set for Arabic', (t: ExecutionContext<TestContext>) => {
-  const ENS = 'الشمس.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = 'الشمس.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.ALPHANUMERIC);
 });
 
 test('should retrieve alphanumeric character set for Korean', (t: ExecutionContext<TestContext>) => {
-  const ENS = '태양.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = '태양.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.ALPHANUMERIC);
 });
 
 test('should retrieve alphanumeric character set for Chinese', (t: ExecutionContext<TestContext>) => {
-  const ENS = '太陽.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = '太陽.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.ALPHANUMERIC);
 });
 
 test('should retrieve alphanumeric character set for emoji + letters', (t: ExecutionContext<TestContext>) => {
-  const ENS = '🥛shake.eth';
-  const result = findCharacterSet(getLabel(ENS));
+  const ONS = '🥛shake.eth';
+  const result = findCharacterSet(getLabel(ONS));
   t.is(result, characterSet.MIXED);
 });
 

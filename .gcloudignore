@@ -25,6 +25,9 @@ docgen.js
 generateEmojiRange.js
 tsconfig.json
 yarn-error.log
+.yarn
+.yarn/cache
+
 
 # Test files and artifacts:
 .nyc_output/

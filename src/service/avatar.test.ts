@@ -12,7 +12,7 @@ test('should return data URIs without any changes', async (t: ExecutionContext<T
 });
 
 test('should return http URIs without any changes', async (t: ExecutionContext<TestContext>) => {
-  const uri = 'https://app.ens.domains';
+  const uri = 'https://app.opnames.org';
   const { uri: resolvedURI } = utils.resolveURI(uri, { ipfs: IPFS_GATEWAY });
   t.is(uri, resolvedURI);
 });

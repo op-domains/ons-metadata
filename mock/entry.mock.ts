@@ -58,7 +58,7 @@ export class MockEntry {
     if (unknown) {
       const { url, ...unknownMetadata } = new Metadata({
         name: 'unknown.name',
-        description: 'Unknown ENS name',
+        description: 'Unknown ONS name',
         created_date: 1580346653000,
         tokenId: '',
         version: Version.v1,
@@ -92,10 +92,10 @@ export class MockEntry {
     });
 
     (_metadata as Metadata).setImage(
-      `https://metadata.ens.domains/goerli/${ADDRESS_NAME_WRAPPER}/${this.namehash}/image`
+      `https://metadata.opnames.org/goerli/${ADDRESS_NAME_WRAPPER}/${this.namehash}/image`
     );
     (_metadata as Metadata).setBackground(
-      `https://metadata.ens.domains/goerli/avatar/${name}`
+      `https://metadata.opnames.org/goerli/avatar/${name}`
     );
 
     this.domainResponse = {
