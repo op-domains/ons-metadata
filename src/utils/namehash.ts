@@ -5,7 +5,7 @@ const sha3     = require('js-sha3').keccak_256;
 const namehash = require('@ensdomains/eth-ens-namehash');
 
 const eth0x =
-  '4f5b812789fc606be1b3b16908db13fc7a9adf7ca72641f84d75b47069d3d7f0';
+  'bc41dd7236fa8be09e593a876f5868355879efd89a87f2a6d06bb0b228b3a3b2';
 
 export function constructEthNameHash(tokenId: string, version: Version): string {
   if (version > Version.v1) return tokenId;

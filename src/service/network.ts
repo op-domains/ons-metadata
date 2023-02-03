@@ -50,7 +50,7 @@ export default function getNetwork(network: string): any {
       break;
     case NETWORK.GOERLI:
       SUBGRAPH_URL =
-        'https://api.thegraph.com/subgraphs/name/ensdomains/ensgoerli';
+        'https://api.thegraph.com/subgraphs/name/grmkris/op-ens';
         WEB3_URL = getWeb3URL(WEB3_URL, NETWORK.GOERLI);
       break;
     case NETWORK.MAINNET:

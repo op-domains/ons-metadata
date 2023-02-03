@@ -9,7 +9,7 @@
     "x-logo": {
       "url": "/assets/logo.svg",
       "backgroundColor": "#FFFFFF",
-      "altText": "Ethereum Name Service"
+      "altText": "opereum Name Service"
     }
   },
   "paths": {
@@ -309,7 +309,7 @@
     "examples": {
       "AvatarMetadata": {
         "value": {
-          "$uri": "matoken.eth",
+          "$uri": "matoken.op",
           "is_owner": true,
           "host_meta": {
             "chain_id": 1,
@@ -339,8 +339,8 @@
       },
       "ONSMetadata": {
         "value": {
-          "$name": "nick.eth",
-          "$description": "nick.eth, an ONS name.",
+          "$name": "nick.op",
+          "$description": "nick.op, an ONS name.",
           "$attributes": [
             {
               "trait_type": "Created Date",
@@ -364,9 +364,9 @@
             }
           ],
           "name_length": 4,
-          "url": "https://app.opname.org/name/nick.eth",
+          "url": "https://app.opname.org/name/nick.op",
           "version": 0,
-          "background_image": "https://metadata.opname.org/mainnet/avatar/nick.eth",
+          "background_image": "https://metadata.opname.org/mainnet/avatar/nick.op",
           "image_url": "https://metadata.opname.org/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image"
         }
       }
@@ -511,7 +511,7 @@
       },
       "onsName": {
         "type": "string",
-        "example": "nick.eth",
+        "example": "nick.op",
         "xml": {
           "name": "onsName"
         }
