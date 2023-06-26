@@ -9,7 +9,7 @@
     "x-logo": {
       "url": "/assets/logo.svg",
       "backgroundColor": "#FFFFFF",
-      "altText": "opereum Name Service"
+      "altText": "Optimism Name Service"
     }
   },
   "paths": {
@@ -364,10 +364,10 @@
             }
           ],
           "name_length": 4,
-          "url": "https://app.opname.org/name/nick.op",
+          "url": "https://app.opnames.org/name/nick.op",
           "version": 0,
-          "background_image": "https://metadata.opname.org/mainnet/avatar/nick.op",
-          "image_url": "https://metadata.opname.org/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image"
+          "background_image": "https://metadata.opnames.org/mainnet/avatar/nick.op",
+          "image_url": "https://metadata.opnames.org/mainnet/0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85/0x5d5727cb0fb76e4944eafb88ec9a3cf0b3c9025a4b2f947729137c5d7f84f68f/image"
         }
       }
     },

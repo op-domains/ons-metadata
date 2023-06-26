@@ -3,9 +3,9 @@ import { UnsupportedNetwork } from '../base';
 import { INFURA_API_KEY } from '../config';
 
 const WEB3_API = {
-  INFURA: 'https://infura.io/v3/',
-  CLOUDFLARE: 'https://web3metadata.ens.domains/v1',
-  CLOUDFLARE_2: 'https://web3metadata2.ens.domains/v1'
+  INFURA: 'https://optimism-mainnet.infura.io/v3/6023dcf7b8d0464d9cf61366c377d60a',
+  CLOUDFLARE: 'https://optimism-mainnet.infura.io/v3/6023dcf7b8d0464d9cf61366c377d60a',
+  CLOUDFLARE_2: 'https://optimism-mainnet.infura.io/v3/6023dcf7b8d0464d9cf61366c377d60a'
 }
 
 const NETWORK = {
@@ -54,7 +54,7 @@ export default function getNetwork(network: string): any {
         WEB3_URL = getWeb3URL(WEB3_URL, NETWORK.GOERLI);
       break;
     case NETWORK.MAINNET:
-      SUBGRAPH_URL = 'https://api.thegraph.com/subgraphs/name/ensdomains/ens';
+      SUBGRAPH_URL = 'https://api.thegraph.com/subgraphs/name/opnamesdev/ons';
       WEB3_URL = getWeb3URL(WEB3_URL, NETWORK.MAINNET);
       break;
     default:
