@@ -4,8 +4,8 @@ import { INFURA_API_KEY } from '../config';
 
 const WEB3_API = {
   INFURA: 'https://optimism-mainnet.infura.io/v3/6023dcf7b8d0464d9cf61366c377d60a',
-  CLOUDFLARE: 'https://optimism-mainnet.infura.io/v3/6023dcf7b8d0464d9cf61366c377d60a',
-  CLOUDFLARE_2: 'https://optimism-mainnet.infura.io/v3/6023dcf7b8d0464d9cf61366c377d60a'
+  CLOUDFLARE: 'https://optimism.meowrpc.com',
+  CLOUDFLARE_2: 'https://optimism.publicnode.com'
 }
 
 const NETWORK = {
@@ -54,7 +54,7 @@ export default function getNetwork(network: string): any {
         WEB3_URL = getWeb3URL(WEB3_URL, NETWORK.GOERLI);
       break;
     case NETWORK.MAINNET:
-      SUBGRAPH_URL = 'https://api.thegraph.com/subgraphs/name/opnamesdev/ons';
+      SUBGRAPH_URL = 'https://api.thegraph.com/subgraphs/name/opnamesdev/ons-op';
       WEB3_URL = getWeb3URL(WEB3_URL, NETWORK.MAINNET);
       break;
     default:
